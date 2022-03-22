@@ -27,12 +27,12 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Fav -->
-    <title>Relatório de Serviço</title>
+    <title>Relation App</title>
 </head>
 
 <body>
-    <div class="mods" style="position: absolute; width: 100%; height: 100%;">
-        <div class="cookies">
+    <div class="mods" style="position: absolute; width: 100%; height: 100%; display: none;">
+        <div class="cookies" style="display: none; ">
             <div class="head">
                 <h1>Sua Privacidade 🍪</h1>
                 <span>
@@ -56,7 +56,7 @@
                 <button type="button" class="btn_cookie" style="color: #f1f1f1;">Aceitar</button>
             </div>
         </div>
-        <div class="name">
+        <div class="name" style="display: none; ">
             <div class="wel" style="text-align: center">
                 <h1>Seja Bem Vindo(a)!</h1>
                 <span class="deg" style="color: var(--txt);">Dê os seguintes passos para configurar seu acesso:</span>
@@ -157,74 +157,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <header id="head" class="head">
-        <div class="bar">
-            <p class="txt_bas">Atividades do mês — Março</p>
-        </div>
-        <div class="manager">
-            <div class="theme-toggle">
-                <span class="icon icon-sun-fill">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24"
-                        height="24" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
-                    </svg>
-                </span>
-                <label class="switch" id="switch" for="dark_mode">
-                    <input type="checkbox" name="dark_mode" id="dark_mode">
-                    <span class="slider"></span>
-                </label>
-                <span class="icon icon-moon-fill ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-up"
-                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <line x1="12" y1="5" x2="12" y2="3"></line>
-                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
-                        <line x1="19" y1="12" x2="21" y2="12"></line>
-                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
-                        <line x1="12" y1="19" x2="12" y2="21"></line>
-                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
-                        <line x1="6" y1="12" x2="4" y2="12"></line>
-                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line>
-                    </svg>
-                </span>
-            </div>
-            <div class="account" style="margin-left: 8px;">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="14" fill="#F1F1F1" />
-                    <path
-                        d="M14.2781 17.0593C18.204 17.0593 21.5562 17.6817 21.5562 20.1723C21.5562 22.662 18.2256 23.307 14.2781 23.307C10.3522 23.307 7 22.6846 7 20.195C7 17.7044 10.3307 17.0593 14.2781 17.0593ZM14.2781 5C16.9511 5 19.0943 7.15367 19.0943 9.84318C19.0943 12.5317 16.9511 14.6874 14.2781 14.6874C11.6052 14.6874 9.4619 12.5317 9.4619 9.84318C9.4619 7.15367 11.6052 5 14.2781 5Z"
-                        fill="#382F70" />
-                </svg>
-
-            </div>
-        </div>
-    </header>
-    <div class="layout">
-        <p class="msg" style="text-align: center; padding: 8px;">Sem atividades ainda</p>
-        <!-- <div class="view">
-            <h1 class="txt_title">Estudo - 03/03/2003</h1>
-            <div class="main_activity">
-                <span class="act">02:00 Horas</span>
-                <span class="act">01 Publicações</span>
-                <span class="act">02 Revisitas</span>
-                <span class="act">03 Vídeos</span>
-                <span class="act">02 Estudos</span>
-            </div>
-        </div> -->
-
-        <div
-            style="display: none; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); top: 0; right: 0;">
-        </div>
-
         <div class="mod activity" style="display: none">
             <div class="_head">
                 <p class="txt_bas">Adicionar Atividades</p>
-                <span>
+                <span class="close">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="9" cy="9" r="9" fill="#F1F1F1" />
                         <path d="M5 5L13 13M5 13L13 5" stroke="#382F70" stroke-width="2" />
@@ -274,7 +210,7 @@
 
                     </label>
 
-                    <label for="videos" class="inp" id="videos">
+                    <label for="videos" class="inp">
                         <p class="txt_title">Vídeos</p>
                         <div class="it" style="display: flex; justify-content: flex-end;">
                             <p class="s_in txt_main" aria-placeholder="00">00</p>
@@ -306,9 +242,68 @@
             </div>
         </div>
     </div>
+    <header id="head" class="head">
+        <div class="bar">
+            <p class="txt_bas">Atividades do mês — Março</p>
+        </div>
+        <div class="manager">
+            <div class="theme-toggle">
+                <span class="icon icon-sun-fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                    </svg>
+                </span>
+                <label class="switch" id="switch" for="dark_mode">
+                    <input type="checkbox" name="dark_mode" id="dark_mode">
+                    <span class="slider"></span>
+                </label>
+                <span class="icon icon-moon-fill ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-up"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line>
+                    </svg>
+                </span>
+            </div>
+            <div class="account" style="margin-left: 8px;">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="14" r="14" fill="#F1F1F1" />
+                    <path
+                        d="M14.2781 17.0593C18.204 17.0593 21.5562 17.6817 21.5562 20.1723C21.5562 22.662 18.2256 23.307 14.2781 23.307C10.3522 23.307 7 22.6846 7 20.195C7 17.7044 10.3307 17.0593 14.2781 17.0593ZM14.2781 5C16.9511 5 19.0943 7.15367 19.0943 9.84318C19.0943 12.5317 16.9511 14.6874 14.2781 14.6874C11.6052 14.6874 9.4619 12.5317 9.4619 9.84318C9.4619 7.15367 11.6052 5 14.2781 5Z"
+                        fill="#382F70" />
+                </svg>
+
+            </div>
+        </div>
+    </header>
+    <div class="layout">
+        <p class="msg" style="text-align: center; padding: 8px;">Sem atividades ainda</p>
+
+        <div style="display: none; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); top: 0; right: 0;">
+        </div>
+
+        <main id="main_acts"></main>
+
+        <div class="btns">
+            <button class="btn _act">+ Adicionar atividade</button>
+        </div>
+    </div>
 </body>
 <script src="../scripts/dark.js"></script>
 <script src="../scripts/img.js"></script>
+<script src="../scripts/data.js"></script>
 <script>
     var index = 1;
     document.querySelector('.name .btn_name').addEventListener('click', (i) => {
@@ -340,6 +335,16 @@
 
     })
 
+    document.querySelector('.btn._act').addEventListener('click', () => {
+        document.querySelector('.mod.activity').removeAttribute('style');
+        document.querySelector('.mods').setAttribute('style', 'position: absolute;width: 100%;height: 100%;align-items: center;');
+    })
+
+    const close = document.querySelector('._head span.close')
+    close.addEventListener('click', () => {
+        close.closest('.mods').style.display = "none";
+    })
+
     document.querySelectorAll('.cookies button, .cookies .head span').forEach((i) => {
         i.onclick = function cookie() {
             document.querySelector('.cookies').style.display = "none";
@@ -352,15 +357,6 @@
             const input = document.querySelectorAll('.inp .it.on input')
             input.forEach((a) => {
                 a.style.opacity = 1;
-            });
-
-            document.querySelector('label#hour').addEventListener('keyup', (e) => {
-                const val = document.querySelector('#hour input').value;
-                const format = val.slice(0, 2) + ":" + val.slice(2, 10);
-                const format0 = "0" + val.slice(0, 1) + ":" + val.slice(1, 10);
-                if (val.length === 3) {
-                    document.querySelector('p.s_in').innerHTML = format0;
-                } else document.querySelector('p.s_in').innerHTML = format;
             });
 
             document.querySelectorAll('label').forEach((label) => {
@@ -377,6 +373,15 @@
                         }
                     });
                 });
+            });
+
+            document.querySelector('label#hour').addEventListener('keyup', (e) => {
+                const val = document.querySelector('#hour input').value;
+                const format = val.slice(0, 2) + ":" + val.slice(2, 10);
+                const format0 = "0" + val.slice(0, 1) + ":" + val.slice(1, 10);
+                if (val.length === 3) {
+                    document.querySelector('p.s_in').innerHTML = format0;
+                } else document.querySelector('p.s_in').innerHTML = format;
             });
 
             document.addEventListener('keyup', (e) => {

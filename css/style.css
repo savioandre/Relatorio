@@ -75,6 +75,12 @@ button {
     background: var(--bac);
 }
 
+#main_acts {
+    display: grid;
+    gap: 8px;
+    padding: 8px 8px 0;
+}
+
 ._head {
     background: var(--pri);
     color: var(--txt);
@@ -158,6 +164,13 @@ form {
     padding: var(--pad);
     border-radius: 5px;
     place-self: end;
+}
+
+._act {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    color: #f1f1f1;
 }
 /* Modais */
 .mods {
